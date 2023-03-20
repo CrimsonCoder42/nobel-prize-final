@@ -31,3 +31,17 @@ eleventyComputed:
     </li>
   {% endfor %}
 </ul>
+
+Requirements:
+● Use JavaScript global data to fetch (eleventy-fetch) the data from the NPS API
+○ Use a limit of 25 100 parks returned per request. In your JavaScript, make
+multiple requests to collect information about all the parks, and combine the park
+listing into one data structure that you can use in your 11ty templates.
+○ Use the "X-Api-Key" HTTP header to send your NPS API key instead of the
+"api_key" parameter in the query string.
+○ Be kind to your API provider and cache the responses for one day. Remember to
+exclude your .cache directory from your git repository through your .gitignore
+file.
+● Use dotenv library (reads from .env file) to store your NPS_API_KEY. Remember to
+exclude your .env file from your git repository through your .gitignore file.
+● Use CSS at least a bit to style your site

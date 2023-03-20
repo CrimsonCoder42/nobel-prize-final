@@ -1,0 +1,20 @@
+---
+title: Nobel Prizes in Chemistry
+layout: base
+---
+{% for prize in chemistry.nobelPrizes %}
+  <p>{{ prize.awardYear }}</p>
+  <ul class="listing">
+    {% for laureate in prize.laureates %}
+      <li>
+        <span class="name">
+          {% if laureate.knownName.en %}
+            {{ laureate.knownName.en }}
+          {% elsif laureate.orgName.en %}
+            {{ laureate.orgName.en }}{% endif %}
+        </span><br/>
+        <span class="motivation">{{ laureate.motivation.en }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

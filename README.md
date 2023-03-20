@@ -1,32 +1,9 @@
-# cscie-114_week-06_11ty-graphql-final
-This is a fully functioning demo of 11ty using the [Star Wars GraphQL API](https://graphql.org/swapi-graphql/) and the [Open Movie Database (OMDB) API](https://www.omdbapi.com/).
+# eleventy-nobel
 
-## Installation
-After cloning the repository, installation consists of three steps:
+This is a demonstration site that uses [Eleventy (11ty)](https://11ty.dev/) site generator and data from the [Nobel Prize API](https://www.nobelprize.org/about/developer-zone-2/).
 
-1. Adding and populating a `.env` file with an API key for the OMDB API.
+This example demonstrates using JSON file data in 11ty as well as JSON data from APIs, along with pagination and collections.
 
-2. Installing the appropriate npm packages.
-
-3. Running the 11ty server on your local machine.
-
-### Add a `.env` file
-1. Create an API key at the [OMDB API](https://www.omdbapi.com/).
-
-2. In the root directory of your cloned repository, create a `.env` file:
-        touch .env
-
-3. Add the following line to your `.env` file:
-
-        OMDB_API_KEY=<your omdb api key goes here>
+This example is part of the course [CSCI E-114, Web Application Development Using Jamstack](https://courses.dce.harvard.edu/?details&crn=26437), offered through [Harvard Extension School](https://extension.harvard.edu/).
 
 
-### Install the appropriate npm packages
-In the root directory of the cloned repository, install all the npm packages you need with the following command:
-
-    npm install
-
-### Build and run the website with 11ty
-In the root directory of the cloned repository, build the website and serve it up with:
-
-    npm start

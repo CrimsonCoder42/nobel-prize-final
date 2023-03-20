@@ -1,20 +1,24 @@
 {
-  "name": "cscie-114_week-06_11ty-graphql-final",
+  "name": "elevent-nobel",
   "version": "1.0.0",
-  "description": "This is a fully, functioning demo of 11ty using the Star Wars GraphQL API. It will be used during week 6 CSCI E-114 during Spring 2023.",
+  "description": "Eleventy Example using Nobel Prizes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx @11ty/eleventy --serve --incremental",
     "build": "npx @11ty/eleventy",
-    "version": "npx @11ty/eleventy --version"
+    "start": "npx @11ty/eleventy --serve --incremental"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cscie114/eleventy-nobel.git"
+  },
+  "author": "David Heitmeyer",
   "license": "ISC",
-  "dependencies": {
-    "@11ty/eleventy": "^2.0.0",
-    "@11ty/eleventy-fetch": "^3.0.0",
-    "dotenv": "^16.0.3"
+  "bugs": {
+    "url": "https://github.com/cscie114/eleventy-nobel/issues"
+  },
+  "homepage": "https://github.com/cscie114/eleventy-nobel#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0"
   }
 }

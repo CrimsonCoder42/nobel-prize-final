@@ -1,109 +1,77 @@
-/*========
-// Styles for index AND individual movie pages.
-==========*/
 * {
     box-sizing: border-box;
-    margin: 0;
 }
 
 body {
-    background-color: black;
-    color: gold;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 80%;
-    margin: 0.5rem auto;
+    font-family: Calibri, sans-serif;
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+}
 
+header,
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #ddd;
+    font-size: smaller;
+    padding: 1rem;
+    margin-top: 5rem;
+    border-top: 2px solid black;
 }
 
 header {
     display: grid;
-    grid-template-columns: 50% 50%;
-    border-bottom: thin solid gold;
-    border-top: thin solid gold;
-    padding: 5px 0 5px 0;
-}
-
-header div {
-    height: 50px;
-}
-
-header div:last-child {
-    text-align: right;
-}
-
-header img {
-    max-height: 100%;
-}
-
-footer {
-    border-top: thin solid gold;
-    font-size: 0.85rem;
-}
-
-a:link, a:visited, a:hover, a:active {
-    color: gold;
-}
-
-/*=========
-// Styles specific to the individual movie pages.
-===========*/
-#dashboard {
-    display: grid;
     grid-template-areas:
-        "swImg mInfo"
-        "swImg mData";
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 40% 60%;
-    background-color: grey;
-    border-radius: 0.25rem;
-    margin-bottom: 0.5rem;
+        "site-title   nav"
+        "page-title   page-title";
+    margin-bottom: 1rem;
 }
 
-#dashboard div,
-#dataBoard nav,
-#dataBoard #dataListContainer {
-    background-color: white;
-    border-radius: 0.25rem;
-    margin: 0.25rem;
-    padding: 0.25rem;
-    color: black;
-}
-
-#dashboard a:link, 
-#dashboard a:visited, 
-#dashboard a:hover, 
-#dashboard a:active {
-    color: black;
-}
-
-#moviePoster {
-    grid-area: swImg;
-    text-align: center;
-}
-
-#moviePoster img {
-    width: 100%;
-}
-
-#infoBoard {
-    grid-area: mInfo;
-}
-
-#dashboard #dataBoard {
-    grid-area: mData;
-    display: grid;
-    grid-template-columns: 25% 75%;
-    background-color: grey;
-    padding: 0;
+header h1 {
+    grid-area: site-title;
     margin: 0;
+    padding-top: 1rem;
+    font-size: 7vw;
 }
 
-#dashboard #dataBoard #dataListContainer div.dataList {
-    display: none;
+header h2 {
+    grid-area: page-title;
     margin: 0;
-    padding: 0;
-    overflow: scroll;
-    height: 200px;
+    padding-top: 0.5rem;
 }
 
+header nav {
+    grid-area: nav;
+    justify-self: end;
+    align-self: center;
+}
 
+main p {
+    line-height: 1.5;
+}
+li { margin-bottom: 0.5rem; }
+.listing li.start { border-top: thin solid black; padding-top: 0.25rem;}
+h3 { margin-bottom: 0; padding-bottom: 0; }
+ul.listing { line-height: 1.25; margin-top: 0.5rem;}
+ul.listing li { margin-bottom: 0.5rem;}
+ul.listing li .name { font-weight: bold;}
+ul.listing li .motivation { font-style: italic; }

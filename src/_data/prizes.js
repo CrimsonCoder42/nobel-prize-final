@@ -27,7 +27,8 @@ module.exports = async function () {
     let prizesData = await EleventyFetch(url, {
       fetchOptions: {
         headers: {
-          "User-Agent": userAgent,
+          "User-Agent": userAgent, // assignment needs to Use the "X-Api-Key" HTTP header to send your NPS API key instead of the
+          // "api_key" parameter in the query string.
         },
       },
       duration: "1d",
